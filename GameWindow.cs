@@ -66,7 +66,7 @@ namespace zapoctak_antattack
             Content.RootDirectory = "Content";
 
             float scale = 5f;
-            this.Window.AllowUserResizing = false;
+            this.Window.AllowUserResizing = true;
             graphics.PreferredBackBufferWidth = (int)(256 * scale);
             graphics.PreferredBackBufferHeight = (int)(192 * scale);
 
@@ -374,7 +374,7 @@ namespace zapoctak_antattack
             // tell the player that they won
             ShowMessage(gameTime, "YOU ARE A TRUE HERO!", 1.0, true, InterfaceState.IngameMessage);
             PlaySound(sounds["fanfara"].CreateInstance());
-            
+
             // calculate score
             score += (int)((playerEntity.Hitpoints + hostageEntity.Hitpoints) / 20f * RoundTime);
             rescued++;
