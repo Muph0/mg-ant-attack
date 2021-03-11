@@ -1,0 +1,6 @@
+bin
+obj
+
+*.xnb
+*.mgcontent
+*.mgstats
